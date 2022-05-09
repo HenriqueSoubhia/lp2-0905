@@ -1,0 +1,68 @@
+.carlos{
+    margin-left: -200%;
+}
+
+.animacao{
+    animation: 7s linear 0s 1 running a;
+    animation-fill-mode: both;
+}
+
+
+.aparece{
+    animation: 3s linear 0s 1 running aparece;
+    animation-fill-mode: both;
+}
+
+#btn{
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+@keyframes a{
+    0%{margin-left: -200%;}
+    100%{margin-left: 0%;}
+}
+
+@keyframes aparece{
+    0%{opacity: 0%;}
+    100%{}
+}
+
+
+textarea{
+    height: 150px;
+    resize: none;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+:root{
+    --cor1: rgb(185, 185, 185);
+    --cor2: rgb(44, 48, 44);
+}
+
+.dark-theme{
+    --cor1: rgb(48, 44, 44);
+    --cor2: rgb(185, 185, 185);
+}
+
+body{
+    color: var(--cor2);
+    background-color: var(--cor1);
+}
+
+tbody{
+    color: var(--cor2);
+    background-color: var(--cor1);
+}
+
