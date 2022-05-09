@@ -72,7 +72,6 @@ module.exports = (app) => {
                 } catch (error) {
                     //cosole.log(erro)
                 }
-                fs.unlinkSync('uploads/' + req.body.anterior)
                 //alterar o nome do arquivo na coleção gallery
                 var documento = await gallery.findOneAndUpdate
                     ({ _id: req.query.id },
